@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="containerss">
+    <h2>Checkout</h2>
+    <form id="checkout-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <span class="error-message" id="address-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required>
+        <span class="error-message" id="contact-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="debit-card">Debit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <span class="error-message" id="payment-method-error"></span>
+      </div>
+      <button type="submit"  class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
