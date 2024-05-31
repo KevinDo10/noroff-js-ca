@@ -99,10 +99,38 @@
         </nav>
       </div>
     </header>
-    <div class="container" id="movies-container"
-    style="margin-top: 180px;"
-    ></div>
-
+    <div class="container" style="margin-top: 180px;">
+      <div id="filter-container" style="margin-bottom: 20px;">
+          <label for="genre-filter">Genre:</label>
+          <select id="genre-filter">
+              <option value="all">All</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+          </select>
+          
+          <label for="rating-filter">Rating:</label>
+          <select id="rating-filter">
+              <option value="all">All</option>
+              <option value="10">10</option>
+              <option value="9.0">9.0</option>
+              <option value="8.0">8.0</option>
+              <option value="7.0">7.0</option>
+          </select>
+      </div>
+    </div>
+    <div class="container" id="movies-container" style="margin-top: 180px;"></div>
+    <center>
+    <div id="movie-details" style="display: none;">
+      <h2 id="movie-title"></h2>
+      <img id="movie-image" alt="Movie Image">
+      <p id="movie-genre"></p>
+      <p id="movie-rating"></p>
+      <p id="movie-released"></p>
+      <p id="movie-price"></p>
+    </div>
+  </center>
+    <div id="check"></div>
     <script src="script.js"></script>
   </body>
 </html>
